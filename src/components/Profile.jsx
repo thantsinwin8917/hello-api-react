@@ -71,6 +71,12 @@ export default function Profile() {
                                     Image</button> <br />
                     </div>
             }
+
+<br />
+
+<Link to="/users">
+    <button>Go to User Management</button>
+</Link>
             <br />
 
             <Link to="/logout">
