@@ -62,21 +62,21 @@ export default function Profile() {
                     <div>Loading...</div> :
                     <div>
                         ID: {data._id} <br />
-                        Email: {data.email} <br />
                         First Name: {data.firstname} <br />
-                        Last Name: {data.lastname} <br /><br />
+                        Last Name: {data.lastname} <br />
+                        Email: {data.email} <br />
+                        <br />
                         Image: <br />{hasImage && <img src={`${API_URL}${data.profileImage}`}
                             width={150} height={150} />} <br /><input type="file" id="profileImage"
                                 name="profileImage" ref={fileInputRef} /> <button onClick={onUpdateImage}>Update
                                     Image</button> <br />
                     </div>
             }
+            <br />
 
-<br />
-
-<Link to="/users">
-    <button>Go to User Management</button>
-</Link>
+            <Link to="/users">
+                <button>Go to User Management</button>
+            </Link>
             <br />
 
             <Link to="/logout">
