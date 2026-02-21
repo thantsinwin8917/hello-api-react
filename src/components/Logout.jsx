@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useUser } from "../context/UserProvider";
 import { Navigate } from "react-router-dom";
-import Login from "./login";
+import Login from "./Login";
 export default function Logout() {
 const [isLoading, setIsLoading] = useState(true);
   const { logout } = useUser();
